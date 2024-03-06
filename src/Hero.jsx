@@ -5,18 +5,21 @@ const Hero = () => {
     <div className="bg-emerald-100 py-24">
       <div className=" align-element  px-8 py-8 grid md:grid-cols-2 items-center gap-8">
         <article>
-          <h1 className="text-7xl font-bold tracking-wider">I am Evariste</h1>
+          <h1 className="text-7xl font-bold tracking-wider">
+            Je suis Evariste
+          </h1>
           <p className="text-3xl mt-4 text-slate-700 tracking-wide capitalize">
-            I am a full stack developer, specialize in Javascript technologies!
+            Je suis un developpeur full stack, spécialisé dans le developpement
+            d'applications web et mobile.
           </p>
           <p className="mt-2 text-lg text-slate-700 capitalize">
-            turning ideas into interactive reality
+            J'ai un profil orienté vers les technos JavaScript.
           </p>
           <div className="flex gap-x-4 mt-4">
-            <a href="">
+            <a href="https://github.com/rayagnewende">
               <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
-            <a href="">
+            <a href="https://www.linkedin.com/in/kaborerayagnewendeevariste/">
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
             <a href="">

@@ -1,4 +1,4 @@
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaAppStoreIos, FaAndroid } from "react-icons/fa";
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ img, github, title, text }) => {
@@ -17,6 +17,19 @@ const ProjectCard = ({ img, github, title, text }) => {
           <a href={github}>
             <FaGithubSquare className="h-8 w-8 text-slate-500" />
           </a>
+          {title ===
+          "PlateSuggest: une application mobile réalisé avec React Native" ? (
+            <>
+              <a href="exp://u.expo.dev/update/43f27341-a892-44e8-bf32-40c2194e814e">
+                <FaAppStoreIos className="h-8 w-8 text-slate-500" />
+              </a>
+              <a href="exp://u.expo.dev/update/3a7c0574-4ce4-4c3f-a99a-4bbcad1d9765">
+                <FaAndroid className="h-8 w-8 text-slate-500" />
+              </a>
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
