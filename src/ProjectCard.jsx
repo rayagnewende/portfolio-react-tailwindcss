@@ -1,4 +1,5 @@
 import { FaGithubSquare, FaAppStoreIos, FaAndroid } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
 
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ img, github, title, text }) => {
@@ -17,6 +18,14 @@ const ProjectCard = ({ img, github, title, text }) => {
           <a href={github}>
             <FaGithubSquare className="h-8 w-8 text-slate-500" />
           </a>
+          {title ===
+          "Intégration Complète D'une Maquette Ecommerce Avec React.Js" ? (
+            <a href="https://comfy-store-app-cyan.vercel.app">
+              <TbWorldWww className="h-8 w-8 text-slate-500" />
+            </a>
+          ) : (
+            ""
+          )}
           {title ===
           "PlateSuggest: une application mobile réalisé avec React Native" ? (
             <>

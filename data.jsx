@@ -19,7 +19,7 @@ import {
   SiVite,
 } from "react-icons/si";
 import PlateSuggest from "./src/assets/platesuggest.png";
-import Ecommerce from "./src/assets/ecommerce1.png";
+import Ecommerce from "./src/assets/ecommerce.png";
 
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
