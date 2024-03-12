@@ -19,7 +19,7 @@ const ProjectCard = ({ img, github, title, text }) => {
             <FaGithubSquare className="h-8 w-8 text-slate-500" />
           </a>
           {title ===
-          "Intégration Complète D'une Maquette Ecommerce Avec React.Js" ? (
+          "Intégration complète d'une maquette ecommerce avec React.js" ? (
             <a href="https://comfy-store-app-cyan.vercel.app">
               <TbWorldWww className="h-8 w-8 text-slate-500" />
             </a>
