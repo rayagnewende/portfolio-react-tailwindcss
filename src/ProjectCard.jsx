@@ -4,23 +4,27 @@ import { TbWorldWww } from "react-icons/tb";
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ img, github, title, text }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-xl duration:100">
+    <div className="mt-4 marker:backdrop:bg-white rounded-lg shadow-md hover:shadow-xl duration:100 ">
       <img
         src={img}
         alt={title}
-        className="w-full object-cover shadow-t-xl h-64"
+        className="w-full object-fill shadow-t-xl h-64"
       />
       <div className="capitalize p-8">
         <h2 className="text-xl tracking-wide font-medium">{title}</h2>
         <p className="mt-4 text-slate-700 leading-loose">{text}</p>
 
         <div className="mt-4 flex gap-x-4">
-          <a href={github}>
+          <a href={github} target="_blank" rel="noreferrer">
             <FaGithubSquare className="h-8 w-8 text-slate-500" />
           </a>
           {title ===
           "Intégration complète d'une maquette ecommerce avec React.js" ? (
-            <a href="https://comfy-store-app-cyan.vercel.app">
+            <a
+              href="https://comfy-store-app-cyan.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
               <TbWorldWww className="h-8 w-8 text-slate-500" />
             </a>
           ) : (
@@ -29,10 +33,18 @@ const ProjectCard = ({ img, github, title, text }) => {
           {title ===
           "PlateSuggest: une application mobile réalisé avec React Native" ? (
             <>
-              <a href="exp://u.expo.dev/update/43f27341-a892-44e8-bf32-40c2194e814e">
+              <a
+                href="https://expo.dev/accounts/kaboreva/projects/frontend/updates/0b6ae6c7-faa9-4d2e-b690-37dc9d050659"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaAppStoreIos className="h-8 w-8 text-slate-500" />
               </a>
-              <a href="exp://u.expo.dev/update/3a7c0574-4ce4-4c3f-a99a-4bbcad1d9765">
+              <a
+                href="https://expo.dev/accounts/kaboreva/projects/frontend/updates/0b6ae6c7-faa9-4d2e-b690-37dc9d050659"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaAndroid className="h-8 w-8 text-slate-500" />
               </a>
             </>

@@ -1,4 +1,6 @@
 import About from "./About";
+import Certifications from "./Certifications";
+import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -11,7 +13,9 @@ const App = () => {
       <Hero />
       <About />
       <Skills />
-      <Projects                                                                                                                                                                                                                                                                                                                             />
+      <Projects />
+      <Certifications />
+      <Footer />
     </>
   );
 };

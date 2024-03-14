@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import heroImage from "./assets/hero.svg";
 const Hero = () => {
@@ -8,12 +9,13 @@ const Hero = () => {
           <h1 className="text-7xl font-bold tracking-wider">
             Je suis Evariste
           </h1>
-          <p className="text-3xl mt-4 text-slate-700 tracking-wide capitalize">
+          <p className="text-3xl mt-4 text-slate-700 tracking-wide ">
             Je suis un developpeur full stack, spécialisé dans le developpement
             d'applications web et mobile.
           </p>
-          <p className="mt-2 text-lg text-slate-700 capitalize">
-            J'ai un profil orienté vers les technos JavaScript.
+          <p className="mt-2 text-lg text-slate-700 ">
+            J'ai un profil polyvalent avec une facilité d'apprentissage des
+            nouvelles technologies et une bonne communication écrite et orale.
           </p>
           <div className="flex gap-x-4 mt-4">
             <a href="https://github.com/rayagnewende">
