@@ -20,7 +20,7 @@ function About() {
             J'ai déjà eu l'opportunité de travailler sur plusieurs projets
             utilisant divers technologies et langages de programmation.
           </p>
-          <p>
+          <p className="text-slate-600 mt-8 leading-loose">
             J'ai un bon niveau d'analyse et de résolution de problèmes et j'aime
             également travailler sur des projets innovants qui apportent de la
             plus value aux utilisateurs finaux de nos projets.
