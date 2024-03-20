@@ -2,11 +2,11 @@
 const CertificationCard = ({ certification }) => {
   console.log(certification);
   return (
-    <div className="">
+    <div className="hover:">
       <img
         src={certification.img}
         alt={certification.title}
-        className="h-60 w-48"
+        className="h-80 w-90"
       />
     </div>
   );

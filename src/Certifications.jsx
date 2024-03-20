@@ -8,7 +8,7 @@ const Certifications = () => {
   return (
     <div className=" mt-10 align-element " id="certifications">
       <SectionTitle text="Certifications obtenues" />
-      <div className="flex gap-6 items-center whitespace-nowrap">
+      <div className="flex gap-x-6">
         {certifications.map((certification) => {
           return (
             <CertificationCard
