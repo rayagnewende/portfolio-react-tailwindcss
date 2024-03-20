@@ -20,7 +20,13 @@ import {
 } from "react-icons/si";
 import PlateSuggest from "./src/assets/platesuggest.png";
 import Ecommerce from "./src/assets/ecommerce.png";
-
+import Docker from "./src/assets/docker.png";
+import Css from "./src/assets/css.png";
+import Sql from "./src/assets/sql.png";
+import Java from "./src/assets/java.png";
+import JQuery from "./src/assets/jquery.png";
+import JavaScript from "./src/assets/javascript.png";
+import Express from "./src/assets/express.jpeg";
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
   { id: nanoid(), href: "#about", text: "about" },
@@ -157,7 +163,7 @@ export const projects = [
     url: "https://react-projects.netlify.app/",
     github: "https://github.com/rayagnewende/plate-suggest-frontend.git",
     title: "PlateSuggest: une application mobile réalisé avec React Native",
-    text: "Création d'une application mobile de suggestion plats et menus en fonction des préférences de l'utilisateur. le backend a été réalisé avec Express et une base de données MongoDB.Pour tester l'application, il suffit d'installer EXpo go dans votre téléphone et scanner le QRcode disponible en cliquant sur le lien ci-dessous.",
+    text: "Intégrationn de la partie frontend de l'application PlateSuggest qui est une application mobile de suggestion plats et menus en fonction des préférences des utilisateurs.La partie frontend a été réalisé avec React Native et Expo.Pour tester l'application, il suffit d'installer EXpo go dans votre téléphone et scanner le QRcode disponible en cliquant sur le lien ci-dessous.",
   },
   {
     id: nanoid(),
@@ -166,5 +172,46 @@ export const projects = [
     github: "https://github.com/rayagnewende/comfy-store-app.git",
     title: "Intégration complète d'une maquette ecommerce avec React.js",
     text: "intégration complète d'une maquette ecommerce de vente de produits divers.l'intégration a été faite avec React 18, TailwindCSS, Vite, HOOKS, et bien d'autres technologies.",
+  },
+  {
+    id: nanoid(),
+    img: Express,
+    url: "https://react-projects.netlify.app/",
+    github: "https://github.com/rayagnewende/plate-suggest-backend.git",
+    title: "Création d'une API Restful avec le frameword Express.js",
+    text: "Création de la partie backend de l'application mobile PlateSuggest. l'API a été réalisée avec le framework Express.js et Google places.Les données ont été stockées dans une base de données MongoDB.",
+  },
+];
+
+export const certifications = [
+  {
+    id: nanoid(),
+    img: Docker,
+    title: "Docker certification",
+  },
+  {
+    id: nanoid(),
+    img: Java,
+    title: "Java certification",
+  },
+  {
+    id: nanoid(),
+    img: JavaScript,
+    title: "JavaScript certification",
+  },
+  {
+    id: nanoid(),
+    img: JQuery,
+    title: "JQuery certification",
+  },
+  {
+    id: nanoid(),
+    img: Css,
+    title: "Css certification",
+  },
+  {
+    id: nanoid(),
+    img: Sql,
+    title: "Sql certification",
   },
 ];

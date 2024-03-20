@@ -1,9 +1,9 @@
 import About from "./About";
-import Certifications from "./Certifications";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
+import Rubriques from "./Rubriques";
 import Skills from "./Skills";
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
-      <Certifications />
+      <Rubriques />
       <Footer />
     </>
   );

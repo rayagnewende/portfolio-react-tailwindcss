@@ -1,10 +1,12 @@
-const CertificationCard = () => {
+/* eslint-disable react/prop-types */
+const CertificationCard = ({ certification }) => {
+  console.log(certification);
   return (
-    <div className="mt-4 marker:backdrop:bg-white rounded-lg shadow-md hover:shadow-xl duration:100">
+    <div className="">
       <img
-        src="https://cdn.futura-sciences.com/cdn-cgi/image/width=1024,quality=50,format=auto/sources/images/dossier/773/01-intro-773.jpg"
-        alt=""
-        className="h-48 w-48 "
+        src={certification.img}
+        alt={certification.title}
+        className="h-60 w-48"
       />
     </div>
   );

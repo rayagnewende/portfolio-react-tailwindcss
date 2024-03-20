@@ -4,9 +4,9 @@ import AboutImge from "./assets/about.svg";
 
 function About() {
   return (
-    <section className="bg-white px-8 py-20" id="apropos">
+    <section className="bg-white align-element     px-8 py-20" id="apropos">
       <SectionTitle text="A propos de moi" />
-      <div className="align-element grid md:grid-cols-2  items-center gap-16">
+      <div className=" grid md:grid-cols-2  items-center gap-16">
         <img src={AboutImge} alt="about image" className="w-full h-64" />
         <article>
           <SectionTitle text="Développeur Full Stack" />
