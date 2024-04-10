@@ -1,16 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import heroImage from "./assets/hero.svg";
+import Developer from "./assets/developpeur.webp";
+
 const Hero = () => {
   return (
     <div className="bg-emerald-100 py-24">
       <div className=" align-element  px-8 py-8 grid md:grid-cols-2 items-center gap-8">
         <article>
           <h1 className="text-7xl font-bold tracking-wider">
-            Je suis Evariste
+              Je Evariste KABORE
           </h1>
           <p className="text-3xl mt-4 text-slate-700 tracking-wide ">
-            Je suis un developpeur full stack, spécialisé dans le developpement
+            Un developpeur full stack, spécialisé dans le developpement
             d'applications web et mobile.
           </p>
           <p className="mt-2 text-lg text-slate-700 ">
@@ -29,8 +31,12 @@ const Hero = () => {
             </a>
           </div>
         </article>
-        <article className="hidden md:block">
-          <img src={heroImage} alt="presentation" className="h-80 lg:h-96" />
+        <article className=" hidden md:block ml-32">
+          <img
+            src={Developer}
+            alt="presentation"
+            className="h-80 lg:h-96 rounded-full"
+          />
         </article>
       </div>
     </div>

@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import SectionTitle from "./SectionTitle";
 import AboutImge from "./assets/about.svg";
+import Developer from "./assets/developpeur.webp";
 
 function About() {
   return (
     <section className="bg-white align-element     px-8 py-20" id="apropos">
       <SectionTitle text="A propos de moi" />
       <div className=" grid md:grid-cols-2  items-center gap-16">
-        <img src={AboutImge} alt="about image" className="w-full h-64" />
+        <img src={Developer} alt="about image" className="h-96 mt-20 ml-10  rounded-full" />
         <article>
           <SectionTitle text="Développeur Full Stack" />
           <p className="text-slate-600 mt-8 leading-loose">
