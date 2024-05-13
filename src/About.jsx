@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import SectionTitle from "./SectionTitle";
-import AboutImge from "./assets/about.svg";
 import Developer from "./assets/developpeur.webp";
 
 function About() {

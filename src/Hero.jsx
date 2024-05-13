@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
-import heroImage from "./assets/hero.svg";
+//import heroImage from "./assets/hero.svg";
 import Developer from "./assets/developpeur.webp";
+import Typewriter from "react-ts-typewriter";
 
 const Hero = () => {
   return (
@@ -9,7 +10,11 @@ const Hero = () => {
       <div className=" align-element  px-8 py-8 grid md:grid-cols-2 items-center gap-8">
         <article>
           <h1 className="text-7xl font-bold tracking-wider">
-              Je Evariste KABORE
+            <Typewriter
+              text="Je suis Evariste KABORE"
+              speed={150}
+              cursor={false}
+            />
           </h1>
           <p className="text-3xl mt-4 text-slate-700 tracking-wide ">
             Un developpeur full stack, spécialisé dans le developpement

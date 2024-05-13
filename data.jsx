@@ -1,4 +1,6 @@
 import { nanoid } from "nanoid";
+import Cicd from "./src/assets/cicd.webp";
+
 import {
   FaHtml5,
   FaJs,
@@ -8,6 +10,8 @@ import {
   FaPhp,
   FaJava,
   FaAws,
+  FaDocker,
+  FaPython,
 } from "react-icons/fa";
 import {
   SiJest,
@@ -18,6 +22,7 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
+import { TbBrandNextjs, TbBrandPrisma } from "react-icons/tb";
 import PlateSuggest from "./src/assets/platesuggest.png";
 import Ecommerce from "./src/assets/ecommerce.png";
 import Docker from "./src/assets/docker.png";
@@ -27,6 +32,7 @@ import Java from "./src/assets/java.png";
 import JQuery from "./src/assets/jquery.png";
 import JavaScript from "./src/assets/javascript.png";
 import Express from "./src/assets/express.jpeg";
+import Chatbot from "./src/assets/chatbot.png";
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
   { id: nanoid(), href: "#about", text: "about" },
@@ -50,6 +56,12 @@ export const skills = [
   {
     id: nanoid(),
     title: "React",
+    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "React Native",
     icon: <FaReact className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
@@ -83,6 +95,12 @@ export const skills = [
     icon: <SiStyledcomponents className="h-16 w-16 text-emerald-500" />,
     text: "Expertise in JavaScript, building interactive and dynamic web applications with a focus on seamless user interactions and functionality",
   },
+  {
+    id: nanoid(),
+    title: "Next.js ",
+    icon: <TbBrandNextjs className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
 ];
 
 export const skills2 = [
@@ -106,12 +124,6 @@ export const skills2 = [
   },
   {
     id: nanoid(),
-    title: "React Native",
-    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
-    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
-  },
-  {
-    id: nanoid(),
     title: "PHP",
     icon: <FaPhp className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
@@ -120,6 +132,12 @@ export const skills2 = [
     id: nanoid(),
     title: "JAVA",
     icon: <FaJava className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "PYTHON",
+    icon: <FaPython className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
@@ -146,16 +164,34 @@ export const skills2 = [
     icon: <SiJest className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
+  {
+    id: nanoid(),
+    title: "Prisma",
+    icon: <TbBrandPrisma className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
+  {
+    id: nanoid(),
+    title: "Docker",
+    icon: <FaDocker className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
+  {
+    id: nanoid(),
+    title: "CI/CD",
+    icon: Cicd,
+    text: "",
+  },
 ];
 
 export const projects = [
   {
     id: nanoid(),
-    img: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/329410356/original/70740188569f489f1bc0f2ad3cce1a106d992f1f/create-nestjs-rest-api.png",
-    url: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/329410356/original/70740188569f489f1bc0f2ad3cce1a106d992f1f/create-nestjs-rest-api.png",
-    github: "https://github.com/rayagnewende/intro-nestjs-app.git",
-    title: "Création d'une API RESTful avec le framwork Nest.js",
-    text: "cette API a été créée avec Nest.js et PoSTGRES comme base de données. c'estte API implémente pas mal de fonctionnalités notamment, la gestion des utilisateurs, celles des taches et bien d'autres",
+    img: Express,
+    url: "https://react-projects.netlify.app/",
+    github: "https://github.com/rayagnewende/plate-suggest-backend.git",
+    title: "Création d'une API Restful avec le frameword Express.js",
+    text: "Création de la partie backend de l'application mobile PlateSuggest. l'API a été réalisée avec le framework Express.js et Google places.Les données ont été stockées dans une base de données MongoDB.",
   },
   {
     id: nanoid(),
@@ -175,11 +211,19 @@ export const projects = [
   },
   {
     id: nanoid(),
-    img: Express,
-    url: "https://react-projects.netlify.app/",
-    github: "https://github.com/rayagnewende/plate-suggest-backend.git",
-    title: "Création d'une API Restful avec le frameword Express.js",
-    text: "Création de la partie backend de l'application mobile PlateSuggest. l'API a été réalisée avec le framework Express.js et Google places.Les données ont été stockées dans une base de données MongoDB.",
+    img: Chatbot,
+    url: "https://comfy-store-app-cyan.vercel.app",
+    github: "https://github.com/rayagnewende/chatbot-with-open-ai.git",
+    title: "Création d'un chatbot avec Node.js(TypeScript)  et openai API.",
+    text: "Il s'agit de la réalisation d'un chatbot ayant plus ou moins les fonctions que ChatGPT. cette API a été réalisé grace à openai API et TypeScript.",
+  },
+  {
+    id: nanoid(),
+    img: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/329410356/original/70740188569f489f1bc0f2ad3cce1a106d992f1f/create-nestjs-rest-api.png",
+    url: "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/329410356/original/70740188569f489f1bc0f2ad3cce1a106d992f1f/create-nestjs-rest-api.png",
+    github: "https://github.com/rayagnewende/intro-nestjs-app.git",
+    title: "Création d'une API RESTful avec le framwork Nest.js",
+    text: "cette API a été créée avec Nest.js et PoSTGRES comme base de données. c'estte API implémente pas mal de fonctionnalités notamment, la gestion des utilisateurs, celles des taches et bien d'autres",
   },
 ];
 
