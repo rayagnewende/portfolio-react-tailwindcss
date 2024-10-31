@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
@@ -14,6 +15,7 @@ const App = () => {
       <About />
       <Skills />
       <Projects />
+      <Contact />
       <Rubriques />
       <Footer />
     </>
