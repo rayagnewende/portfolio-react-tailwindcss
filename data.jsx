@@ -1,6 +1,5 @@
 import { nanoid } from "nanoid";
 import Cicd from "./src/assets/cicd.webp";
-
 import {
   FaHtml5,
   FaJs,
@@ -12,6 +11,11 @@ import {
   FaAws,
   FaDocker,
   FaPython,
+  FaSass,
+  FaGit,
+  FaGithub,
+  FaJenkins,
+  FaGitlab,
 } from "react-icons/fa";
 import {
   SiJest,
@@ -21,8 +25,17 @@ import {
   SiStyledcomponents,
   SiTypescript,
   SiVite,
+  SiHibernate,
+  SiSpringsecurity,
+  SiExpo,
 } from "react-icons/si";
-import { TbBrandNextjs, TbBrandPrisma } from "react-icons/tb";
+import {
+  TbBrandNextjs,
+  TbBrandPrisma,
+  TbBrandReactNative,
+  TbBrandRedux,
+} from "react-icons/tb";
+import { BiLogoSpringBoot } from "react-icons/bi";
 import PlateSuggest from "./src/assets/platesuggest.png";
 import Ecommerce from "./src/assets/ecommerce.png";
 import Docker from "./src/assets/docker.png";
@@ -33,11 +46,14 @@ import JQuery from "./src/assets/jquery.png";
 import JavaScript from "./src/assets/javascript.png";
 import Express from "./src/assets/express.jpeg";
 import Chatbot from "./src/assets/chatbot.png";
+import SpringbootApi from "./src/assets/restapi.png";
+import Jobify from "./src/assets/jobify.png";
 export const links = [
   { id: nanoid(), href: "#home", text: "home" },
   { id: nanoid(), href: "#about", text: "about" },
   { id: nanoid(), href: "#skills", text: "skills" },
   { id: nanoid(), href: "#projects", text: "projects" },
+  { id: nanoid(), href: "#contact", text: "contact" },
 ];
 
 export const skills = [
@@ -50,7 +66,7 @@ export const skills = [
   {
     id: nanoid(),
     title: "SASS",
-    icon: <FaHtml5 className="h-16 w-16 text-emerald-500" />,
+    icon: <FaSass className="h-16 w-16 text-emerald-500" />,
     text: "Highly skilled in HTML & CSS, adeptly crafting visually appealing and responsive websites for optimal user experiences.",
   },
   {
@@ -61,8 +77,20 @@ export const skills = [
   },
   {
     id: nanoid(),
+    title: "Redux",
+    icon: <TbBrandRedux className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
     title: "React Native",
-    icon: <FaReact className="h-16 w-16 text-emerald-500" />,
+    icon: <TbBrandReactNative className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "Expo",
+    icon: <SiExpo className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
@@ -101,6 +129,18 @@ export const skills = [
     icon: <TbBrandNextjs className="h-16 w-16 text-emerald-500" />,
     text: "",
   },
+  {
+    id: nanoid(),
+    title: "GIT",
+    icon: <FaGit className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
+  {
+    id: nanoid(),
+    title: "GITHUB",
+    icon: <FaGithub className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
 ];
 
 export const skills2 = [
@@ -132,6 +172,30 @@ export const skills2 = [
     id: nanoid(),
     title: "JAVA",
     icon: <FaJava className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "SPRING BOOT",
+    icon: <BiLogoSpringBoot className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "Hibernate",
+    icon: <SiHibernate className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "SPRING SECURITY",
+    icon: <SiSpringsecurity className="h-16 w-16 text-emerald-500" />,
+    text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
+  },
+  {
+    id: nanoid(),
+    title: "JENKINS",
+    icon: <FaJenkins className="h-16 w-16 text-emerald-500" />,
     text: "Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.",
   },
   {
@@ -178,6 +242,12 @@ export const skills2 = [
   },
   {
     id: nanoid(),
+    title: "GITLAB",
+    icon: <FaGitlab className="h-16 w-16 text-emerald-500" />,
+    text: "",
+  },
+  {
+    id: nanoid(),
     title: "CI/CD",
     icon: Cicd,
     text: "",
@@ -190,7 +260,7 @@ export const projects = [
     img: Express,
     url: "https://react-projects.netlify.app/",
     github: "https://github.com/rayagnewende/plate-suggest-backend.git",
-    title: "Création d'une API Restful avec le frameword Express.js",
+    title: "Création d'une API Restful avec le Framework Express.js",
     text: "Création de la partie backend de l'application mobile PlateSuggest. l'API a été réalisée avec le framework Express.js et Google places.Les données ont été stockées dans une base de données MongoDB.",
   },
   {
@@ -203,11 +273,30 @@ export const projects = [
   },
   {
     id: nanoid(),
+    img: SpringbootApi,
+    url: "",
+    github:
+      "https://github.com/rayagnewende/complete_restfulAPI_with_springboot.git",
+    title:
+      "Implémentation d'une API Restful de gestion d'articles pour un blog avec Spring boot",
+    text: "Cette API a été développée via spring boot, spring data jpa, hibernate, spring security et bien d'autres outils, tout en respectant les bonnes pratiques de programmation",
+  },
+  {
+    id: nanoid(),
     img: Ecommerce,
     url: "https://comfy-store-app-cyan.vercel.app",
     github: "https://github.com/rayagnewende/comfy-store-app.git",
     title: "Intégration complète d'une maquette ecommerce avec React.js",
     text: "intégration complète d'une maquette ecommerce de vente de produits divers.l'intégration a été faite avec React 18, TailwindCSS, Vite, HOOKS, et bien d'autres technologies.",
+  },
+  {
+    id: nanoid(),
+    img: Jobify,
+    url: "",
+    github: "https://github.com/rayagnewende/Job-Tracking-App.git",
+    title:
+      "Intégration d'une maquette professionnelle d'une application de suivi des offres d'emploi des utilisateurs",
+    text: "l'intégration a été faite grace au framework Next.js,tailwindcss,  clerk, shadcn ui, prisma, et bien d'autres outils.",
   },
   {
     id: nanoid(),

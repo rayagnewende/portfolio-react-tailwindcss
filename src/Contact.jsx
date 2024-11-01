@@ -35,7 +35,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className=" px-8 py-20 text-center">
+    <div className=" px-8 py-20 text-center" id="contact">
       <SubTitle text=" Contact" />
       <div className="flex justify-center items-center mt-10">
         <form
