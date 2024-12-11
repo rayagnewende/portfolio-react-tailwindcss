@@ -4,7 +4,7 @@ import { TbWorldWww } from "react-icons/tb";
 // eslint-disable-next-line react/prop-types
 const ProjectCard = ({ img, github, title, text }) => {
   return (
-    <div className="mt-4 marker:backdrop:bg-white rounded-lg shadow-md hover:shadow-xl duration:100 ">
+    <div className="mt-6 marker:backdrop:bg-white rounded-lg shadow-md hover:shadow-xl duration:100 ">
       <img
         src={img}
         alt={title}

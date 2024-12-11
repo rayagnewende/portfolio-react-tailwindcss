@@ -1,5 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { SiFrontendmentor } from "react-icons/si";
+
 //import heroImage from "./assets/hero.svg";
 import Developer from "./assets/developpeur.webp";
 import Typewriter from "react-ts-typewriter";
@@ -31,8 +33,8 @@ const Hero = () => {
             <a href="https://www.linkedin.com/in/kaborerayagnewendeevariste/">
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
-            <a href="">
-              <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <a href="https://www.frontendmentor.io/profile/rayagnewende">
+              <SiFrontendmentor className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
           </div>
         </article>

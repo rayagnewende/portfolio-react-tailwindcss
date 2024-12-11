@@ -269,7 +269,7 @@ export const projects = [
     url: "https://react-projects.netlify.app/",
     github: "https://github.com/rayagnewende/plate-suggest-frontend.git",
     title: "PlateSuggest: une application mobile réalisé avec React Native",
-    text: "Intégrationn de la partie frontend de l'application PlateSuggest qui est une application mobile de suggestion plats et menus en fonction des préférences des utilisateurs.La partie frontend a été réalisé avec React Native et Expo.Pour tester l'application, il suffit d'installer EXpo go dans votre téléphone et scanner le QRcode disponible en cliquant sur le lien ci-dessous.",
+    text: "Intégrationn de la partie frontend de l'application PlateSuggest qui est une application mobile de suggestion plats et menus en fonction des préférences des utilisateurs.La partie frontend a été réalisé avec React Native et Expo.",
   },
   {
     id: nanoid(),
