@@ -7,7 +7,7 @@ function About() {
     <section className="bg-white align-element     px-8 py-20" id="apropos">
       <SectionTitle text="A propos de moi" />
       <div className=" grid md:grid-cols-2  items-center gap-16">
-        <img src={Developer} alt="about image" className="h-96 mt-20 ml-10  rounded-full" />
+        <img src={Developer} alt="about image" className="h-96 rounded-full mt-20" />
         <article>
           <SectionTitle text="Développeur Full Stack" />
           <p className="text-slate-600 mt-8 leading-loose">
