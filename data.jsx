@@ -44,6 +44,7 @@ import Sql from "./src/assets/sql.png";
 import Java from "./src/assets/java.png";
 import JQuery from "./src/assets/jquery.png";
 import JavaScript from "./src/assets/javascript.png";
+import APIEcommerce from "./src/assets/APIEcommerce.png";
 import Express from "./src/assets/express.jpeg";
 import Chatbot from "./src/assets/chatbot.png";
 import SpringbootApi from "./src/assets/restapi.png";
@@ -255,6 +256,14 @@ export const skills2 = [
 ];
 
 export const projects = [
+  {
+    id: nanoid(),
+    img: APIEcommerce,
+    url: "#",
+    github: "https://github.com/rayagnewende/ecommerce-api-with-springboot.git",
+    title: "API RESTful e-commerce en Java Spring Boot — sécurisée et scalable",
+    text: "Conception et implémentation d’une API RESTful robuste avec Java 17 et Spring Boot, intégrant sécurisation par JWT/OAuth2, gestion optimisée des transactions et respect des bonnes pratiques (Clean Code, SOLID, OWASP). L’architecture modulaire et testée facilite la scalabilité, la maintenance et l’intégration avec des services tiers (paiement, logistique, analytics",
+  },
   {
     id: nanoid(),
     img: Express,
