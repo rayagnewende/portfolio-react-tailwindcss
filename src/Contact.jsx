@@ -84,7 +84,7 @@ const Contact = () => {
           <input
             type="submit"
             value="Envoyer"
-            className=" my-2 py-2 px-12 font-bold text-lg bg-emerald-600 rounded-lg"
+            className=" my-2 py-2 px-5 font-bold  bg-emerald-600 rounded-lg"
           />
         </form>
         <Toaster />
