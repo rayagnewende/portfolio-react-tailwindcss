@@ -23,8 +23,18 @@ const Hero = () => {
             d'applications web et mobile.
           </p>
           <p className="mt-2 text-lg text-slate-700 ">
-            J'ai un profil polyvalent avec une facilité d'apprentissage des
-            nouvelles technologies et une bonne communication écrite et orale.
+            J’aide les entreprises à concevoir et déployer des applications
+            performantes, scalables et sécurisées.
+          </p>
+          <p className="mt-2 text-lg text-slate-700 ">
+            <strong>+10 projets full-stack réalisés</strong>
+            <br />
+            <strong>
+              Expérience en Java, Spring Boot, React(React Native), Node.js, AWS
+            </strong>
+            <br />
+            <strong>Disponible pour missions CDI / CDD Longue durée</strong>
+            <br />
           </p>
           <div className="flex gap-x-4 mt-4">
             <a href="https://github.com/rayagnewende">
